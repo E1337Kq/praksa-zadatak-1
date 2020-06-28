@@ -38,7 +38,7 @@ class SuscribersController extends Controller
     $subscriber->email = request('email');
 
     $subscriber->save();
-    return redirect('/subscribers');
+    return redirect('/');
     }
 
     public function edit(Subscriber $subscriber){

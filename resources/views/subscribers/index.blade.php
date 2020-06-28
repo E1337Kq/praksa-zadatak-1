@@ -6,14 +6,9 @@
             class="container">
             @foreach($subscribers as $subsrciber)
                 <div class="content">
-                    <div class="title">
-                        <h2>
-                            <a href="{{route('subscribers.show', $subsrciber)}}">
+                            {{route('subscribers.show', $subsrciber)}}
                                 {{$subsrciber->first_name}}
-                            </a>
-                        </h2>
-                    </div>
-                    {!! $subsrciber->last_name !!}
+                    {!! $subsrciber->email !!}
                 </div>
             @endforeach
         </div>
